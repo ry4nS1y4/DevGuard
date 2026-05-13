@@ -1,24 +1,64 @@
-# Compiled class file
-*.class
+# ========================
+# Java / Spring Boot
+# ========================
+backend/target/
+backend/*.class
+backend/*.jar
+backend/*.war
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.gradle/
+backend/build/
+backend/out/
 
-# Log file
+# ========================
+# Node / React / Vite
+# ========================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+frontend/playwright-report/
+frontend/test-results/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ========================
+# Environment / Secrets
+# ========================
+.env
+.env.local
+*.env
+application-local.properties
+application-local.yml
+
+# ========================
+# Claude Code
+# ========================
+.claude/settings.local.json
+
+# ========================
+# IDEs
+# ========================
+.idea/
+*.iml
+.vscode/
+*.suo
+*.user
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Docker
+# ========================
+docker-compose.override.yml
+
+# ========================
+# Logs
+# ========================
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+logs/
