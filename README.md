@@ -2,7 +2,7 @@
 
 > A full-stack QA and bug tracking dashboard for software teams.
 
-[![CI](https://github.com/YOUR_USERNAME/devguard/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/devguard/actions/workflows/ci.yml)
+[![CI](https://github.com/ry4nS1y4/devguard/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/devguard/actions/workflows/ci.yml)
 ![Java](https://img.shields.io/badge/Java-21-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2-green)
 ![React](https://img.shields.io/badge/React-18-blue)
