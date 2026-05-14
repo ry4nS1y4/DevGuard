@@ -48,8 +48,10 @@ export interface Bug {
   severity: BugSeverity
   priority: Priority
   status: BugStatus
-  assignedTo?: User
-  createdBy: User
+  createdById: number
+  createdByName: string
+  assignedToId?: number
+  assignedToName?: string
   projectId: number
   projectName: string
   createdAt: string
@@ -69,7 +71,8 @@ export interface TestCase {
   actualResult?: string
   status: TestCaseStatus
   priority: Priority
-  createdBy: User
+  createdById: number
+  createdByName: string
   projectId: number
   projectName: string
   createdAt: string
@@ -103,6 +106,15 @@ export interface TestResult {
 }
 
 // ── Dashboard ─────────────────────────────────────────────────────────────
+export interface DashboardRecentBug {
+  id: number
+  title: string
+  severity: BugSeverity
+  status: BugStatus
+  projectName: string
+  createdAt: string
+}
+
 export interface DashboardStats {
   totalBugs: number
   openBugs: number
@@ -112,11 +124,11 @@ export interface DashboardStats {
   passedTestCases: number
   failedTestCases: number
   blockedTestCases: number
+  notRunTestCases: number
   passRate: number
   bugsBySeverity: Record<BugSeverity, number>
   bugsByStatus: Record<BugStatus, number>
-  recentBugs: Bug[]
-  recentTestRuns: TestRun[]
+  recentBugs: DashboardRecentBug[]
 }
 
 // ── API ───────────────────────────────────────────────────────────────────
