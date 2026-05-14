@@ -76,7 +76,7 @@ export default function DashboardPage() {
     .map(([name, value]) => ({ name, value }))
     .filter((d) => d.value > 0)
 
-  const statusBarData = (Object.entries(stats.bugsByStatus) as [BugStatus, string][])
+  const statusBarData = (Object.entries(stats.bugsByStatus) as [BugStatus, number][])
     .map(([status, count]) => ({ name: statusLabels[status], value: Number(count) }))
 
   return (
