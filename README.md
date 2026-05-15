@@ -15,7 +15,7 @@
 
 DevGuard is a quality assurance and project management platform designed for software teams. It allows teams to manage software projects, track bugs, create test cases, record test results, and monitor project quality through a real-time dashboard.
 
-**[Live Demo →](https://devguard.vercel.app)** | **[API Docs →](https://devguard-api.onrender.com/swagger-ui.html)**
+**[Live Demo →](https://dev-guard-blue.vercel.app)** | **[API Docs →](https://devguard-backend-dsdx.onrender.com/swagger-ui.html)**
 
 > Demo credentials: `demo@devguard.io` / `Demo1234!`
 
@@ -45,7 +45,7 @@ DevGuard is a quality assurance and project management platform designed for sof
 | Testing | JUnit 5, Mockito, Vitest, React Testing Library, Playwright |
 | DevOps | Docker, Docker Compose, GitHub Actions |
 | Docs | Swagger / OpenAPI 3 |
-| Deployment | Vercel (frontend) + Render (backend) + Supabase (database) |
+| Deployment | Vercel (frontend) + Render (backend) + Render PostgreSQL (database) |
 
 ---
 
